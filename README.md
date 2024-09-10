@@ -1,2 +1,2 @@
 # Night.css
-Classless framework for the perfect dark mode!
+Classless framework for a perfect dark mode!

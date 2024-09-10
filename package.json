@@ -1,0 +1,8 @@
+{
+	"devDependencies": {
+		"lightningcss-cli": "^1.26.0"
+	},
+	"scripts": {
+		"minify": "lightningcss --minify --bundle --targets '>= 0.25%' src/night.css -o dist/night.min.css"
+	}
+}
