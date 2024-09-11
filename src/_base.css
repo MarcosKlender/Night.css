@@ -13,7 +13,6 @@
 
 html {
     margin: auto;
-    padding-block: 20px;
     width: 80%;
 }
 
@@ -22,4 +21,14 @@ body {
     line-height: 1.6;
     background: var(--bg-body);
     color: var(--txt-primary);
+}
+
+section {
+    margin-block: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
 }

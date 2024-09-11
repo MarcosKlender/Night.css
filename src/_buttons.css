@@ -1,4 +1,21 @@
 button {
     font-size: 0.825rem;
-    padding: 6px;
+    padding: 6px 12px;
+    background: #f4f4f4;
+    color: #252525;
+    border: 1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        background: #dedede;
+        color: #1e1e1e;
+    }
+
+    &:disabled {
+        background: #adadad;
+        color: #5f5f5f;
+        border: inherit;
+        cursor: not-allowed;
+    }
 }
