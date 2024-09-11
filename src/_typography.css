@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: normal;
+    padding-block: 10px;
 }
 
 h1 {
@@ -33,6 +33,7 @@ h6 {
 
 p {
     font-size: 1rem;
+    padding-block: 5px;
 }
 
 a {
@@ -48,9 +49,14 @@ a {
 }
 
 blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     background: var(--bg-blockquote);
     border-left: 3px solid white;
     padding: 10px 20px;
+    margin-block: 10px;
 
     cite {
         color: var(--txt-secondary);
