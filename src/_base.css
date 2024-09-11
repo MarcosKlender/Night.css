@@ -23,8 +23,34 @@ body {
     margin: auto;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-block: 16px;
+    background: var(--bg-body);
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+header,
 section {
-    margin-block: 30px;
+    padding-top: 60px;
 }
 
 footer {
