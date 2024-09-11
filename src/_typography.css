@@ -1,3 +1,12 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: normal;
+}
+
 h1 {
     font-size: 2.5rem;
 }
@@ -28,9 +37,13 @@ p {
 
 a {
     color: var(--txt-secondary);
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
 
     &:hover {
         color: var(--txt-primary);
+        text-decoration: underline;
     }
 }
 
