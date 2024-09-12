@@ -8,3 +8,47 @@ input {
     display: block;
     width: fit-content;
 }
+
+input[type="button"],
+input[type="checkbox"],
+input[type="color"] {
+    &:active {
+        background: #c0c0c0;
+        transform: translateY(2px);
+    }
+}
+
+input[type="button"] {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    background: #f4f4f4;
+    color: #252525;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    &:hover {
+        background: #dedede;
+        color: #1e1e1e;
+    }
+}
+
+input[type="checkbox"] {
+    height: 1.1rem;
+    width: 1.1rem;
+    cursor: pointer;
+}
+
+input[type="color"] {
+    height: 1.5rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+input[type="date"],
+input[type="datetime-local"] {
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 6px;
+}
