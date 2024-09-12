@@ -11,14 +11,19 @@ input {
 
 input[type="button"],
 input[type="checkbox"],
-input[type="color"] {
+input[type="color"],
+input[type="radio"],
+input[type="reset"],
+input[type="submit"] {
     &:active {
         background: #c0c0c0;
         transform: translateY(2px);
     }
 }
 
-input[type="button"] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
     font-size: 0.9rem;
     padding: 10px 20px;
     background: #f4f4f4;
@@ -34,7 +39,8 @@ input[type="button"] {
     }
 }
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
     height: 1.1rem;
     width: 1.1rem;
     cursor: pointer;
@@ -46,9 +52,53 @@ input[type="color"] {
     cursor: pointer;
 }
 
+input[type="file"] {
+    font-size: 0.9rem;
+    padding-block: 5px;
+    cursor: pointer;
+
+    &::file-selector-button {
+        cursor: pointer;
+        padding: 10px 20px;
+        background: #f4f4f4;
+        color: #252525;
+        border-radius: 6px;
+        border: none;
+    }
+
+    &::file-selector-button:hover {
+        background: #dedede;
+        color: #1e1e1e;
+    }
+
+    &::file-selector-button:active {
+        background: #c0c0c0;
+        transform: translateY(2px);
+    }
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
+
 input[type="date"],
-input[type="datetime-local"] {
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"] {
     font-size: 0.9rem;
     padding: 10px;
+    border-radius: 6px;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"] {
+    font-size: 0.9rem;
+    padding: 10px 5px;
     border-radius: 6px;
 }
