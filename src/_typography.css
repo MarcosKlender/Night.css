@@ -31,6 +31,10 @@ h6 {
     font-size: 1.125rem;
 }
 
+hr {
+    margin-block: 6px 12px;
+}
+
 p {
     font-size: 1rem;
     padding-block: 5px;
@@ -64,6 +68,9 @@ blockquote {
     }
 }
 
-hr {
-    margin-block: 6px 12px;
+ol, ul {
+    line-height: 1.8;
+    list-style-position: inside;
+    padding-bottom: 10px;
+    padding-left: 1rem;
 }

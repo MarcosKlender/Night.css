@@ -96,9 +96,20 @@ input[type="number"],
 input[type="password"],
 input[type="search"],
 input[type="tel"],
+textarea,
 input[type="text"],
 input[type="url"] {
+    font-family: inherit;
     font-size: 0.9rem;
     padding: 10px 5px;
     border-radius: 6px;
+    max-width: 100%;
+}
+
+select {
+    font-size: 0.9rem;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
 }

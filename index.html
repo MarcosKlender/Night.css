@@ -9,8 +9,8 @@
     <meta name="description"
         content="Night.css is a classless framework focused on dark mode. It is applied directly to the html tags, no classes needed. Forever free!">
     <title>Night.css</title>
-    <!-- <link rel="stylesheet" href="src/night.css"> -->
-    <link id="styles" rel="stylesheet" href="dist/night.min.css">
+    <link rel="stylesheet" href="src/night.css">
+    <!-- <link id="styles" rel="stylesheet" href="dist/night.min.css"> -->
 </head>
 
 <body>
@@ -59,6 +59,20 @@
                 <p>“Good design is as little design as possible.”</p>
                 <cite>- Dieter Rams</cite>
             </blockquote>
+
+            <p><strong>Ordered List</strong></p>
+            <ol>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+            </ol>
+
+            <p><strong>Unordered List</strong></p>
+            <ul>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+            </ul>
         </section>
 
         <section id="buttons">
@@ -116,11 +130,22 @@
                 <label for="search">Search Input</label>
                 <input type="search" name="search" id="search">
 
+                <label for="select">Select</label>
+                <select name="select" id="select">
+                    <option selected disabled>Select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+
                 <label for="submit">Submit Input</label>
                 <input type="submit" name="submit" id="submit">
 
                 <label for="tel">Tel Input</label>
                 <input type="tel" name="tel" id="tel" autocomplete="tel">
+
+                <label for="textarea">Textarea</label>
+                <textarea name="textarea" id="textarea"></textarea>
 
                 <label for="text">Text Input</label>
                 <input type="text" name="text" id="text">
@@ -135,6 +160,7 @@
                 <input type="week" name="week" id="week">
             </form>
         </section>
+        
     </main>
 
     <footer>
