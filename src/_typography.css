@@ -72,6 +72,23 @@ ol,
 ul {
     line-height: 1.8;
     list-style-position: inside;
-    padding-bottom: 10px;
     padding-left: 1rem;
+    margin-bottom: 10px;
+}
+
+details {
+    background: var(--bg-details-body);
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+    summary {
+        cursor: pointer;
+        background: var(--bg-details-header);
+        border-radius: 6px;
+        padding: 10px 20px;
+    }
+
+    p {
+        padding: 10px 20px;
+    }
 }

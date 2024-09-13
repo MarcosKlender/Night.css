@@ -7,6 +7,8 @@
 :root {
     --bg-body: #121212;
     --bg-blockquote: #252525;
+    --bg-details-header: #1f1f1f;
+    --bg-details-body: #252525;
     --txt-primary: #ffffff;
     --txt-secondary: #cccccc;
 }
@@ -32,12 +34,6 @@ nav {
     margin: auto;
     padding: 16px 10%;
     background: var(--bg-body);
-
-    li {
-        color: var(--txt-secondary);
-        font-weight: bold;
-        cursor: pointer;
-    }
 
     ul {
         display: flex;
