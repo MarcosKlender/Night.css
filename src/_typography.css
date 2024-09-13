@@ -68,7 +68,8 @@ blockquote {
     }
 }
 
-ol, ul {
+ol,
+ul {
     line-height: 1.8;
     list-style-position: inside;
     padding-bottom: 10px;
