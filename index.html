@@ -17,8 +17,8 @@
     <nav>
         <ul>
             <li><a href="#welcome">Night.css</a></li>
-            <li><a href="#sections">Sections</a>
-                <ul>
+            <li id="toggleMenu">Sections
+                <ul id="menu">
                     <li><a href="#typography">Typography</a></li>
                     <li><a href="#buttons">Buttons</a></li>
                     <li><a href="#forms">Forms</a></li>
@@ -258,16 +258,28 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const toggleStyles = document.getElementById('toggleStyles');
+            const stylesToggle = document.getElementById('toggleStyles');
             const stylesLink = document.getElementById('styles');
+            const menuToggle = document.getElementById('toggleMenu');
+            const menuList = document.getElementById('menu');
 
-            toggleStyles.addEventListener('click', function () {
+            stylesToggle.addEventListener('click', function () {
                 if (stylesLink.disabled) {
                     stylesLink.disabled = false;
-                    toggleStyles.textContent = 'Remove Night.css';
+                    stylesToggle.textContent = 'Remove Night.css';
                 } else {
                     stylesLink.disabled = true;
-                    toggleStyles.textContent = 'Add Night.css';
+                    stylesToggle.textContent = 'Add Night.css';
+                }
+            });
+
+            menuToggle.addEventListener('click', function () {
+                if (menuToggle.style.textDecoration == 'underline') {
+                    menuToggle.style.textDecoration = 'none';
+                    menuList.style.display = 'none';
+                } else {
+                    menuToggle.style.textDecoration = 'underline';
+                    menuList.style.display = 'block';
                 }
             });
         });

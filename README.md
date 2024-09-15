@@ -32,7 +32,7 @@ A classless framework for a perfect dark mode!
 
 ## About The Project
 
-In active development (hopefully). ☝🏻🤓
+In active development (in my free time). ☝🏻🤓
 
 **Features**
 - Minified and bundled with LightningCSS.
