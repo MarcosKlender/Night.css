@@ -104,6 +104,10 @@ input[type="url"] {
     border-radius: 6px;
 }
 
+input:disabled {
+    cursor: not-allowed;
+}
+
 textarea {
     font-family: inherit;
     font-size: 0.9rem;
