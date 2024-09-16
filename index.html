@@ -282,9 +282,11 @@
             menuToggle.addEventListener('click', function () {
                 if (menuToggle.style.textDecoration == 'underline') {
                     menuToggle.style.textDecoration = 'none';
+                    menuToggle.style.color = '#cccccc';
                     menuList.style.display = 'none';
                 } else {
                     menuToggle.style.textDecoration = 'underline';
+                    menuToggle.style.color = '#ffffff';
                     menuList.style.display = 'block';
                 }
             });
