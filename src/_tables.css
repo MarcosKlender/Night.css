@@ -1,0 +1,28 @@
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    overflow-x: auto;
+    width: 100%;
+    margin-block: 10px;
+
+    thead {
+        border-bottom: 1px solid #ccc;
+    }
+
+    th {
+        padding: 12px 6px;
+        text-align: left;
+    }
+
+    tbody tr:nth-child(2n) {
+        background-color: var(--bg-table-row);
+    }
+
+    td {
+        padding: 6px;
+    }
+
+    tfoot {
+        border-top: 1px solid #ccc;
+    }
+}
