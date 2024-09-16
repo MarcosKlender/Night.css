@@ -44,8 +44,13 @@ nav {
 
     ul li {
         position: relative;
+        color: var(--txt-secondary);
         font-weight: bold;
         cursor: pointer;
+
+        &:hover {
+            color: var(--txt-primary);
+        }
     }
 
     ul ul {
