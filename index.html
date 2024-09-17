@@ -44,12 +44,17 @@
 
         <h3>Installation</h3>
         <p>Paste the following tag in the <samp>&lt;head&gt;</samp> of your HTML and see the magic:</p>
-        <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MarcosKlender/night.css@main/dist/night.min.css"&gt;</code>
+        <code id="codeTag">
+            &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MarcosKlender/night.css@main/dist/night.min.css"&gt;
+        </code>
+        <div style="text-align: center;">
+            <button id="copyCode">Copy to clipboard</button>
+        </div>
 
         <h3>Features</h3>
 
         <ul>
-            <li>Minified and bundled with LightningCSS.</li>
+            <li>Minified with <a href="https://lightningcss.dev" target="_blank">LightningCSS</a>.</li>
             <li>Up to 90% browser support.</li>
             <li>Tiniest size possible.</li>
             <li>Responsive.</li>
@@ -328,10 +333,7 @@
     </main>
 
     <footer>
-        <p>
-            Made by <a href="" target="_blank">MarcosKlender</a>.<br>
-            Minified with <a href="https://lightningcss.dev" target="_blank">LightningCSS</a>.
-        </p>
+        <p>Made by <a href="" target="_blank">MarcosKlender</a></p>
         <a href="#welcome">Back to top 🔼</a>
     </footer>
 
@@ -341,6 +343,8 @@
             const stylesLink = document.getElementById('styles');
             const menuToggle = document.getElementById('toggleMenu');
             const menuList = document.getElementById('menu');
+            const codeTag = document.getElementById('codeTag');
+            const copyCode = document.getElementById('copyCode');
 
             stylesToggle.addEventListener('click', function () {
                 if (stylesLink.disabled) {
@@ -362,6 +366,11 @@
                     menuToggle.style.color = '#ffffff';
                     menuList.style.display = 'block';
                 }
+            });
+
+            copyCode.addEventListener('click', function () {
+                navigator.clipboard.writeText(codeTag.innerText);
+                copyCode.textContent = 'Copied';
             });
         });
     </script>
