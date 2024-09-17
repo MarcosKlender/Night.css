@@ -56,6 +56,7 @@ input[type="file"] {
     font-size: 0.9rem;
     padding-block: 5px;
     cursor: pointer;
+    max-width: 100%;
 
     &::file-selector-button {
         cursor: pointer;

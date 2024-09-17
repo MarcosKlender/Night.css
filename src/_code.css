@@ -12,7 +12,9 @@ code {
   background-color: var(--bg-code-samp);
   font-size: 0.9rem;
   padding: 15px 10px;
+  margin-block: 10px;
   border-radius: 6px;
+  overflow-x: auto;
 }
 
 samp {

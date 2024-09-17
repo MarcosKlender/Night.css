@@ -59,6 +59,7 @@ blockquote {
     align-items: center;
     background: var(--bg-blockquote);
     border-left: 3px solid white;
+    border-radius: 0px 6px 6px 0px;
     padding: 10px 20px;
     margin-block: 10px;
 
